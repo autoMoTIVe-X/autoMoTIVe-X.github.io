@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Areas — autoMoTIVe-X</title>
+<meta name="description" content="Four research pillars: Stateless Authentication (ZKP-PUF), Autonomous Rollback & State Integrity, Post-Quantum & Side-Channel Resilience, and Data Sovereignty & Sovereign Clouds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap identity-bar">
+    <div class="brand">
+      <div class="brand-mark"><span class="brand-wordmark">auto<span class="brand-accent">MoTIVe-<span class="brand-x">X</span></span></span> Lab</div>
+      <div class="brand-locations"><b>Belagavi, India</b> · <b>Lille, France</b> · <b>Padova, Italy</b></div>
+    </div>
+    <div class="director-badge">
+      <div class="role">Director</div>
+      <div class="name">Dr. Shrikant Tangade</div>
+      <div class="titles">Prof, AMBIT · MSCA SoE Fellow, Inria</div>
+    </div>
+  </div>
+  <nav class="site-nav wrap" style="padding:0;">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="software-tools.html">Softwares/Tools</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="news.html">News/Outreach</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="hero" style="padding:70px 0 50px;">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner" style="max-width:820px;">
+    <span class="eyebrow reveal is-visible">Research</span>
+    <h1 class="reveal is-visible" style="font-size:clamp(30px,4.4vw,48px); margin:20px 0 0;">Core Research Pillars:<span class="line2">Engineering the "Bulletproof Engine."</span></h1>
+    <p class="lede reveal is-visible" style="margin-top:22px;">Four problems the automotive industry cannot solve with software alone — and the hardware-rooted mathematics we're building to solve them.</p>
+  </div>
+</section>
+
+<!-- ============ PILLARS ============ -->
+<section class="section" style="padding-top:64px;">
+  <div class="wrap">
+    <div class="pillars stagger">
+
+      <!-- PILLAR 1 -->
+      <article class="pillar reveal">
+        <div class="pillar-id">
+          <span class="pillar-num">01</span>
+          <div class="pillar-fp" aria-hidden="true"></div>
+        </div>
+        <div class="pillar-body">
+          <h3>Stateless Authentication <span style="color:var(--accent);">(ZKP–PUF)</span></h3>
+          <div class="pillar-block problem">
+            <span class="label">The Problem</span>
+            <p>Traditional PKI relies on digital keys stored in flash memory — vulnerable to physical probing and extraction the moment an attacker gets a chip off the board.</p>
+          </div>
+          <div class="pillar-block solution">
+            <span class="label">The Solution</span>
+            <p>We develop <strong style="color:var(--text)">PUF-based ZKP handshake protocols</strong> that generate authentication witnesses on the fly. No secrets are stored; trust is derived directly from the silicon hardware itself.</p>
+          </div>
+          <div class="pillar-keywords">
+            <span class="tag">Silicon PUF</span>
+            <span class="tag">Lightweight ZKP</span>
+            <span class="tag">Hardware-in-the-Loop (HIL)</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PILLAR 2 -->
+      <article class="pillar reveal">
+        <div class="pillar-id">
+          <span class="pillar-num">02</span>
+          <div class="pillar-fp" aria-hidden="true"></div>
+        </div>
+        <div class="pillar-body">
+          <h3>Autonomous Rollback &amp; State Integrity</h3>
+          <div class="pillar-block problem">
+            <span class="label">The Problem</span>
+            <p>OTA updates in software-defined vehicles face critical "rollback" failures, often leaving vehicles in insecure or fully bricked states after a failed update.</p>
+          </div>
+          <div class="pillar-block solution">
+            <span class="label">The Solution</span>
+            <p>We are pioneering <strong style="color:var(--text)">mathematical proofs of version integrity</strong>. Our protocols let a vehicle prove a successful, safe reversion to a "known-good-state" without massive cloud-side memory overhead.</p>
+          </div>
+          <div class="pillar-keywords">
+            <span class="tag">Rollback Security</span>
+            <span class="tag">Zonal Architecture</span>
+            <span class="tag">Software-Defined Vehicles (SDV)</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PILLAR 3 -->
+      <article class="pillar reveal">
+        <div class="pillar-id">
+          <span class="pillar-num">03</span>
+          <div class="pillar-fp" aria-hidden="true"></div>
+        </div>
+        <div class="pillar-body">
+          <h3>Post-Quantum &amp; Side-Channel Resilience</h3>
+          <div class="pillar-block problem">
+            <span class="label">The Problem</span>
+            <p>Quantum computers will eventually break RSA/ECC, and attackers are already using power analysis (side-channels) to leak secrets from today's automotive silicon.</p>
+          </div>
+          <div class="pillar-block solution">
+            <span class="label">The Solution</span>
+            <p>We research <strong style="color:var(--text)">lattice-based ZKPs</strong> and side-channel hardening techniques optimized for resource-constrained zonal controllers, focused on NIST-standard PQC algorithms customized for automotive latency requirements.</p>
+          </div>
+          <div class="pillar-keywords">
+            <span class="tag">PQC</span>
+            <span class="tag">Side-Channel Analysis (SCA)</span>
+            <span class="tag">NIST Optimization</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PILLAR 4 -->
+      <article class="pillar reveal">
+        <div class="pillar-id">
+          <span class="pillar-num">04</span>
+          <div class="pillar-fp" aria-hidden="true"></div>
+        </div>
+        <div class="pillar-body">
+          <h3>Data Sovereignty &amp; Sovereign Clouds</h3>
+          <div class="pillar-block problem">
+            <span class="label">The Problem</span>
+            <p>Mobility data is currently siloed or exposed in centralized cloud architectures, creating single points of failure and raising sovereignty concerns as vehicles and their data cross jurisdictional borders.</p>
+          </div>
+          <div class="pillar-block solution">
+            <span class="label">The Solution</span>
+            <p>We design federated, sovereignty-aware architectures for <strong style="color:var(--text)">Common Mobility Data Spaces</strong>, using cryptographic access control and privacy-preserving computation so that ownership and value of the data stay with its origin — not with whichever cloud happens to host it.</p>
+          </div>
+          <div class="pillar-keywords">
+            <span class="tag">Common Mobility Data Spaces</span>
+            <span class="tag">Federated Privacy</span>
+            <span class="tag">Sovereign Cloud Architecture</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-badge">
+      <img src="MSCA_SoE_IMG2.png" alt="MSCA Seal of Excellence — European Commission">    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/shrikant-tangade/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-11h2.88v1.5h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v6.44z"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=oL24HkkAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4.7L12 21l7-3.12v-4.7l-7 3.5-7-3.5z"/></svg>
+      </a>
+      <a href="https://orcid.org/0000-0001-5919-3271" target="_blank" rel="noopener" aria-label="ORCID">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="7.8" cy="7.7" r="1.15"/>
+          <rect x="6.9" y="10.2" width="1.8" height="7.6"/>
+          <path d="M10.8 10.2h3.2c2.5 0 4.3 1.65 4.3 3.8s-1.8 3.8-4.3 3.8h-3.2v-7.6zm1.8 1.6v4.4h1.3c1.5 0 2.5-0.95 2.5-2.2s-1-2.2-2.5-2.2h-1.3z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 autoMoTIVe-X Applied Research Lab — motivex.in</span>
+      <span>Secure-by-design &amp; innovate-by-development</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
