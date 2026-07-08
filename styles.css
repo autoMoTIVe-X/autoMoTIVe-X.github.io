@@ -591,7 +591,7 @@ nav.site-nav{
 
 .pedigree{
   display:grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: 260px 1fr;
   gap: 64px;
   align-items: start;
 }
@@ -621,7 +621,7 @@ nav.site-nav{
     linear-gradient(90deg, var(--line-soft) 1px, transparent 1px) 0 0/18px 18px,
     var(--bg-panel-raised);
 }
-#director .director-card .avatar{ aspect-ratio: auto; height: 200px; margin-bottom: 14px; }
+#director .director-card .avatar{ width: 210px; max-width: 100%; margin: 0 0 14px; }
 .director-card .avatar::after,
 .team-card .avatar::after{
   content:'';
@@ -696,6 +696,34 @@ nav.site-nav{
 .network-item .eyebrow{ margin-bottom:10px; font-size:10.5px; }
 .network-item p{ font-size: 14px; }
 
+.team-card.team-card-row{
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.team-card.team-card-row .avatar{ margin-bottom: 0; flex: 0 0 auto; }
+.team-card-row .profile-body{ flex: 1 1 auto; min-width: 0; }
+.team-card-row .desc{
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+@media (max-width: 600px){
+  .team-card.team-card-row{ flex-direction: column; }
+}
+
+.profile-social{ display:flex; gap: 8px; margin-top: 12px; }
+.profile-social a{
+  display:flex; align-items:center; justify-content:center;
+  width: 28px; height: 28px;
+  border: 1px solid var(--line);
+  color: var(--text-faint);
+  transition: color .15s ease, border-color .15s ease;
+}
+.profile-social a:hover{ color: var(--accent); border-color: var(--accent); }
+.profile-social svg{ width: 13px; height: 13px; }
+
 .team-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
@@ -708,6 +736,10 @@ nav.site-nav{
   margin-bottom: 16px;
 }
 .team-card .avatar::after{ width:4px; height:4px; }
+.team-card .avatar.avatar-lg{ width: 118px; height: 118px; margin-bottom: 18px; }
+.team-card .avatar.avatar-lg::after{ width:6px; height:6px; }
+.team-card .avatar.avatar-xl{ width: 168px; height: 168px; margin-bottom: 20px; }
+.team-card .avatar.avatar-xl::after{ width:6px; height:6px; }
 .team-card .name{ font-family: var(--f-display); font-weight:600; font-size: 16px; margin-bottom: 4px; }
 .team-card .titles{ font-family: var(--f-mono); font-size: 11px; color: var(--text-faint); line-height:1.6; }
 
