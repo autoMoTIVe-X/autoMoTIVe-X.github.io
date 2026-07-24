@@ -778,6 +778,15 @@ nav.site-nav{
 .team-card .avatar.avatar-xl{ width: 168px; height: 168px; margin-bottom: 20px; }
 .team-card .avatar.avatar-xl::after{ width:6px; height:6px; }
 .team-card .name{ font-family: var(--f-display); font-weight:600; font-size: 16px; margin-bottom: 4px; }
+.name .loc,
+.director-badge .name .loc{
+  font-family: var(--f-body, inherit);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.68em;
+  color: var(--text-faint);
+  margin-left: 6px;
+}
 .team-card .titles{ font-family: var(--f-mono); font-size: 11px; color: var(--text-faint); line-height:1.6; }
 
 .join-card{
